@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Text2Image
+
 Text2Image generator
 =======
 # Getting Started with Create React App
@@ -73,3 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 >>>>>>> f0b9abd (Initialize project using Create React App)
+>>>>>>
+### OUTPUT:
+![](https://github.com/PranjalDby/Text2Image/blob/main/Screenshot%202024-07-01%20172943.png)
+![](https://github.com/PranjalDby/Text2Image/blob/main/Screenshot%202024-07-01%20193444.png)
