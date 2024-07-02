@@ -17,7 +17,7 @@ const ImageGen = () => {
             headers: {
                 'accept': "application/json",
                 'Content-Type': "application/json",
-                Authorization:`bearer ${process.env.REA}`
+                Authorization:`bearer ${process.env.REACT_APP_API}`
             },
             body: JSON.stringify({
                 prompt: `${inputRef.current.value}`,
