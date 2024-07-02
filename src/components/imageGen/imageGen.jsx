@@ -54,6 +54,7 @@ const ImageGen = () => {
                 <div className="generate-btn" onClick={() => {
                     imageGenerator();
                     setLoading(true)
+                    console.log(process.env.REACT_APP_API);
                 }}>Generate</div>
             </div>
 
