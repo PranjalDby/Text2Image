@@ -17,8 +17,7 @@ const ImageGen = () => {
             headers: {
                 'accept': "application/json",
                 'Content-Type': "application/json",
-                Authorization:
-                    "Bearer"
+                Authorization:`bearer ${process.env.REA}`
             },
             body: JSON.stringify({
                 prompt: `${inputRef.current.value}`,
@@ -31,6 +30,7 @@ const ImageGen = () => {
         // console.log("key",REACT_APP_API_KEY)
         if (data != 0) {
             setImage_url(data['url']);
+            setLoading(false);
         }
     }
     return (
@@ -53,6 +53,7 @@ const ImageGen = () => {
                 <input className="input-field" required ref={inputRef} type="text" placeholder="Description" />
                 <div className="generate-btn" onClick={() => {
                     imageGenerator();
+                    setLoading(true)
                 }}>Generate</div>
             </div>
 
