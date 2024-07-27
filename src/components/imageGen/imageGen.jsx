@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import "./ImageGen.css";
 import default_img from "../Assests/bkg.jpg";
 
-const isFetching = false;
 const ImageGen = () => {
 
     const [image_url, setImage_url] = React.useState("/");
@@ -28,7 +27,7 @@ const ImageGen = () => {
 
         let data = await response.json();
         // console.log("key",REACT_APP_API_KEY)
-        if (data != 0) {
+        if (data !== 0) {
             setImage_url(data['url']);
             setLoading(false);
         }
